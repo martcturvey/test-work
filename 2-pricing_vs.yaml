@@ -1,0 +1,11 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: pricing
+spec:
+  hosts:
+  - pricing
+  http:
+  - route:
+    - destination:
+        host: www.play-hookey.com

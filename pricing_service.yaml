@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: pricing-service
+spec:
+  type: ClusterIP
+  ports:
+    - name: dummy-port
+      port: 80
+      protocol: TCP
+  selector:
+    app: dummy-selector
